@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgb(201, 3, 3), #080808);
+            color: azure;
+        }
+
+        .container {
+            justify-content: center;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            align-self: center;
+            width: 1285px;
+            background-color: clear;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+            border: 2px solid gold;
+            border-radius: 25px;
+            margin-top: 3%;
+        }
+
+        .logo{
+            width: 200px;
+            height: auto;
+        }
+
+        h1{
+            color: gold;
+            font-size: 50px;
+        }
+
+        .metal-mania-regular {
+            font-family: "Metal Mania", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+        p{
+            font-size: 20px;
+        }
+
+        .input{
+            width: 300px;
+            height: 25px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+            color: gold;
+            padding: 0.25;
+            margin: 0.25;
+            border: ;
+        }
+        
+        .button{
+            color: rgb(3, 3, 3);
+            background-color: gold;
+            width: 150px;
+            height: 50px;
+            border-radius: 5px;
+            font-size: larger;
+            font-family: monospace;
+        }
+
+    </style>
+</head>
+<py-script src="main.py"></py-script>
+<body>
+    <center>
+    <div class="container">
+        <header>
+            <div class="reactor"></div>
+            <img class="logo" src="Mortal-Kombat-logo-removebg-preview.png">
+            <h1 class="metal-mania-regular">Kombat Klub</h1>
+            <p class="metal-mania-regular">FIGHT! First rule of Kombat Club? You do not speak of Kombat Klub...</p>
+        </header>
+        <main>
+            <form>
+                <input type="text" id="first_name" class="input" placeholder="Enter your first name"><br>
+                <br>
+                <input type="text" id="last_name" class="input" placeholder="Enter your last name"><br>
+                <br>
+                <input type="button" class="button" py-click="candidate_checker" value="Enter">
+            </form>
+            <div id="result"></div>
+        </main>
+    </div>
+    <center></center>
+</body>
+</html>
